@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor_gral">
+        <div class="container_register">
+          <div class="container_formulario">
+            <div class="login__logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="logo formulario" width="300" />
+              </a>
+            </div>
+
+
+            <form method="post" enctype="application/x-www-form-urlencoded" class="form__login">
+              <div class="login__user">
+                <label for="usuario" class="form-label"
+                  >Usuario</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Ingresa tu usuario ej: pepito123"
+                  aria-label="usuario"
+                  name="usuario"
+                  required
+                />
+              </div>
+
+              <div class="login__password">
+                  <label for="clave" class="form-label fw-semibold"
+                    >Contraseña</label
+                  >
+                  <input
+                    class="form-control"
+                    type="password"
+                    placeholder="Ingresa tu contraseña"
+                    aria-label="clave"
+                    name="clave"
+                    required
+                  />
+              </div>
+
+              <div class="login__button_submit">
+                  <input
+                  type="submit"
+                  value="Iniciar sesión"
+                  class="btn_login"
+                  />
+                  <div class="login__button_login">
+                      <p>¿No tenes una cuenta?</p><a href="register.html">Registrate</a>
+                  </div>
+              </div>
+            </form>
+          </div>
+          <div class="container_texto">
+            <div class="texto_comunidad">
+              <h1>
+                Forma parte de nuestra
+                <span class="login__textImportant">comunidad.</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+

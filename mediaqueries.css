@@ -1,23 +1,23 @@
 /* Desktop M */
 @media (min-width: 992px) {
   /* NAV */
-  .navbar{
+  .navbar {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     padding: 1.2rem 0;
     justify-content: normal;
   }
-  .logo{
+  .navbar__logo {
     grid-column: 2/3;
   }
   .icons_nav {
     order: 3;
     grid-column: 8/9;
     width: fit-content;
-    transition: all .3s;
+    transition: all 0.3s;
   }
   .icons_nav:hover {
-    filter: invert(.3);
+    filter: invert(0.3);
   }
   label.menu-label {
     display: none;
@@ -38,7 +38,6 @@
     color: var(--greyDark);
     transition: all 0.3s ease-in-out;
   }
-
 
   /* HERO */
   .hero {
@@ -163,7 +162,6 @@
     text-align: center;
     font-size: 2rem;
     padding: 0rem;
-    /* width: 200px; */
     text-align: start;
   }
 
@@ -175,5 +173,31 @@
   /* Servicios */
   .services img {
     width: 250px;
+  }
+}
+
+/* Login & Register */
+
+/* Desktop M */
+@media (max-width: 992px) {
+  .container_texto {
+    display: none;
+  }
+  .container_formulario {
+    width: 50%;
+    min-width: 300px;
+    padding: 0;
+  }
+  .login__logo img, .register__logo img {
+    width: 50vw;
+  }
+}
+@media (max-width: 768px) {
+  .container_formulario {
+    width: 75%;
+  }
+
+  .register__button_submit input,.login__button_submit input {
+    width: 300px;
   }
 }
